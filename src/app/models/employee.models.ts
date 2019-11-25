@@ -6,6 +6,6 @@ export class Employee
     email:string;
     department:string;
     mobilenumber:number;
-    photo:string;
+    photopath:string;
     }
 
