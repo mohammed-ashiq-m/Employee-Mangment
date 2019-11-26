@@ -48,13 +48,13 @@
     </div>
 
     <div class="form-group">
-      <button type="button" (click)="tooglepreviewofphoto()" class="btn btn-primary">
-       {{previewofphoto? "Hide" : "Show"}} Preview
+      <button type="button" (click)="tooglepreviewofphotopath()" class="btn btn-primary">
+       {{previewofphotopath? "Hide" : "Show"}} Preview
       </button>
     </div>
 
     <div class="form-group">
-      <img [src]="photopath" height="130" width="130" *ngIf="previewofphoto"/>
+      <img [src]="photopath" height="130" width="130" *ngIf="previewofphotopath"/>
     </div>
 
   </div>
@@ -64,4 +64,4 @@
 </div>
 </form>
 
-Angular Generated Form Model:   {{employeeForm.value | json}}
+<h4>Angular Generated Form Model:</h4>   {{employeeForm.value | json}}

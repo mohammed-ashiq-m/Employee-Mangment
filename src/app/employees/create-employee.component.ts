@@ -10,12 +10,12 @@ import {Employee} from '../models/employee.models';
   styleUrls: ['./create-employee.component.css']
 })
 export class CreateEmployeeComponent implements OnInit {
-  previewofphoto=false;
-  gender='male';
+  previewofphotopath=false;
+
   employee:Employee={
     id:null,
   name:null,
-  gender:null,
+  gender:'male',
   email:null,
   department:null,
   mobilenumber:null,
@@ -24,8 +24,8 @@ export class CreateEmployeeComponent implements OnInit {
   constructor(private _employeeService:EmployeeService,
               private _router: Router) { }
 
-  tooglepreviewofphoto(){
-    this.previewofphoto=!this.previewofphoto
+  tooglepreviewofphotopath(){
+    this.previewofphotopath=!this.previewofphotopath
   }
   ngOnInit() {
   }

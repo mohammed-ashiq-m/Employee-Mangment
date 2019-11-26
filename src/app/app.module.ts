@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ListEmployeesComponent } from './employees/list-employees.component';
 import { CreateEmployeeComponent } from './employees/create-employee.component';
 import {EmployeeService} from './employees/employee.service';
+import { EmployeesdisplayEmployeeComponent } from './employees/employeesdisplay-employee.component';
 
 const appRoutes:Routes=[
   {path: "list",component: ListEmployeesComponent},
@@ -16,7 +17,8 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     ListEmployeesComponent,
-    CreateEmployeeComponent
+    CreateEmployeeComponent,
+    EmployeesdisplayEmployeeComponent
   ],
   imports: [
     BrowserModule,
